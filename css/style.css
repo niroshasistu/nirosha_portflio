@@ -218,9 +218,79 @@
     transform: translateY(-6px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.08);
 }
+/* About Section */
+.about-section {
+  background: linear-gradient(180deg, #f8fafc, #eef2ff);
+}
+
+/* Tag */
+.about-tag {
+  color: #4f46e5;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* Description */
+.about-desc {
+  max-width: 700px;
+  font-size: 1rem;
+}
+
+/* About Box */
+.about-box {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(79, 70, 229, 0.1);
+  transition: all 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-6px);
+}
+
+/* Skill Cards */
+.about-skill {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.about-skill i {
+  font-size: 32px;
+  color: #4f46e5;
+  margin-bottom: 12px;
+}
+
+.about-skill:hover {
+  transform: translateY(-8px);
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+}
+
+.about-skill:hover i {
+  color: #fff;
+}
+
+/* Gradient Button */
+.btn-gradient {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(135deg, #4338ca, #4f46e5);
+  color: #fff;
+}
 
 
 /*** Skills ***/
+
 #skill .progress {
     height: 5px;
     border-radius: 5px;
@@ -327,6 +397,88 @@
 }
 
 /*** Team ***/
+/* Team Card */
+.team-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.team-card img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Hover Effects */
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.team-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(79, 70, 229, 0.15),
+    rgba(79, 70, 229, 0.9)
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.team-card:hover .team-overlay {
+  opacity: 1;
+}
+
+.team-overlay h5 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.team-overlay span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Social Icons */
+.team-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.team-social a {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #4f46e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.team-social a:hover {
+  background: #4f46e5;
+  color: #fff;
+}
+
 .team-item img {
     transition: .5s;
 }
